@@ -175,8 +175,21 @@ nav .form {
     justify-content: flex-end;
     border-radius: 0px 10px 10px 0px;
 }
+@media (max-width: 991px) {
+    .landing .text {
+        width: 70%;
+    }
+}
 .landing .text .content {
     max-width: 550px;
+}
+@media (max-width: 767px) {
+    .landing .text {
+        width: 100%;
+    }
+    .landing .text .content {
+        max-width: 100%;
+    }
 }
 .landing .text .content h2 {
     font-size: 30px;
@@ -188,7 +201,7 @@ nav .form {
     font-size: 14px;
     line-height: 2;
 }
-.landing .changeba-background {
+/* .landing .change-background {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -199,7 +212,7 @@ nav .form {
 }
 .landing .fa-angle-left {
     left: 30px;
-}
+} */
 .landing .bullets {
     position: absolute;
     left: 50%;
