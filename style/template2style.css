@@ -1,10 +1,10 @@
 /* variables */
-    :root {
-        --main-color: #19c8fa;
-        --trasparent-color: rgb(15 116 143 / 50%);
-        --second-color: #555;
-        --third-color: #777;
-    } 
+:root {
+    --main-color: #19c8fa;
+    --trasparent-color: rgb(15 116 143 / 50%);
+    --second-color: #555;
+    --third-color: #777;
+}
 /* variables */
 
 /* global rules  */
@@ -22,7 +22,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'open sans', sans-serif;
+    font-family: "open sans", sans-serif;
     background-color: rgb(35, 35, 46);
 }
 ul {
@@ -37,21 +37,21 @@ ul {
 /* media queries */
 /* small */
 @media (min-width: 768px) {
-.container {
-    width: 750px;
-}
+    .container {
+        width: 750px;
+    }
 }
 /* medium */
 @media (min-width: 992px) {
-.container {
-    width: 970px;
-}
+    .container {
+        width: 970px;
+    }
 }
 /* large */
 @media (min-width: 1200px) {
-.container {
-    width: 1170px;
-}
+    .container {
+        width: 1170px;
+    }
 }
 /* end global rules  */
 
@@ -107,7 +107,6 @@ nav .toogle-menu:hover + ul {
 }
 nav .toogle-menu:hover + ul li a {
     padding: 15px;
-
 }
 nav ul {
     display: flex;
@@ -122,11 +121,12 @@ ul li a {
     color: whitesmoke;
     display: block;
     font-size: 14px;
-    transition:0.3s;
+    transition: 0.3s;
     position: relative;
     z-index: 2;
 }
-ul li a:hover, ul li a.active {
+ul li a:hover,
+ul li a.active {
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
 }
@@ -148,8 +148,7 @@ nav .form {
 /* end header */
 
 /* start landing */
-.landing
-{
+.landing {
     min-height: 100vh;
     background-color: rgba(35, 35, 46, 0.541);
     background-image: url("../resources/landing.jpg");
@@ -183,9 +182,40 @@ nav .form {
     font-size: 30px;
     line-height: 1.5;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 .landing .text .content p {
     font-size: 14px;
     line-height: 2;
-}   
+}
+.landing .changeba-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+}
+.landing .fa-angle-right {
+    right: 30px;
+}
+.landing .fa-angle-left {
+    left: 30px;
+}
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.landing .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);   
+}
 /* end landing */
