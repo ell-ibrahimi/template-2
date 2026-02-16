@@ -23,7 +23,7 @@ html {
 }
 body {
     font-family: "open sans", sans-serif;
-    background-color: rgb(35, 35, 46);
+
 }
 ul {
     list-style: none;
@@ -38,7 +38,7 @@ ul {
 /* small */
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        width: 700px;
     }
 }
 /* medium */
@@ -54,6 +54,51 @@ ul {
     }
 }
 /* end global rules  */
+
+/* start componenets */
+.main-heading {
+    text-align: center;
+    padding: 0 60px;
+    padding-bottom: 100px;
+}
+.main-heading p {
+    width: 550px;
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+}
+.main-heading h2::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 14px;
+    background-color: #333;
+    bottom: -38px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: whitesmoke;
+}
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+} 
+/* end componenets */
 
 /* start header */
 header {
@@ -232,3 +277,54 @@ nav .form {
     border-color: var(--main-color);   
 }
 /* end landing */
+
+/* services */
+.services {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+@media (min-width: 768px){
+.container .serv-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));   
+    column-gap: 40px;
+    row-gap: 60px;
+}
+.box i {
+    transform: translateY(10px);
+}
+}
+.services .box {
+    display: flex;
+}
+.box i {
+    margin-right: 50px;
+}
+.box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box .text p {
+    line-height: 2;
+    color: #777777e3;
+}
+.box .text h3 {
+    color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .services .box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services .box i {
+        margin: 0 0 20px;
+    }   
+.box .text {
+    gap: 10px;
+}
+}
+/* services */
