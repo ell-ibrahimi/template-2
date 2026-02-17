@@ -17,6 +17,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    list-style: none;
 }
 html {
     scroll-behavior: smooth;
@@ -218,7 +219,7 @@ nav .form {
     color: whitesmoke;
     display: flex;
     justify-content: flex-end;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 5px 5px 0px;
 }
 @media (max-width: 991px) {
     .landing .text {
@@ -360,7 +361,7 @@ nav .form {
 .design .image  {
     text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .design .image {
         display: none;
     }
@@ -373,6 +374,7 @@ nav .form {
     color: whitesmoke;
     padding: 50px;
     background-color: var(--trasparent-color);
+    border-radius: 5px 0 0 5px;
 }
 .design .text h2 {
     font-weight: normal;
@@ -391,3 +393,73 @@ nav .form {
 }
 
 /* design */
+/* portfolio */
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.portfolio .shuffle {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .shuffle li {
+    padding: 10px;
+}
+.portfolio .shuffle li.active {
+    background-color: var(--main-color);
+    color: whitesmoke;
+}
+.portfolio .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.portfolio .imgs .box {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .imgs .box:hover .caption {
+    bottom: 0;
+}
+.portfolio .imgs .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+@media (min-width: 768px) {
+    .portfolio .imgs .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1199px) {
+    .portfolio .imgs .box {
+        flex-basis: 25%;
+    }
+}
+.portfolio .imgs .box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+.portfolio .imgs .box .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+}
+.portfolio .imgs .box .caption h4 {
+    font-weight: normal;
+}
+.portfolio .imgs .box .caption p {
+    color: var(--main-color);
+}
+.portfolio .more {
+    background-color: var(--main-color);
+    color: whitesmoke;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+/* portfolio */
