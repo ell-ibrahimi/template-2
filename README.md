@@ -1,2 +1,2 @@
 # template-two
-<https://ell-ibrahimi.github.io/template-2/>
+<https://prototype-rezero.github.io/template-2/>
