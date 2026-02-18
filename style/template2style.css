@@ -144,12 +144,12 @@ nav .toogle-menu {
 }
 nav .toogle-menu:hover + ul {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
     left: 0;
     width: 100%;
     background-color: rgba(35, 35, 46, 0.541);
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
 }
 nav .toogle-menu:hover + ul li a {
     padding: 15px;
@@ -164,12 +164,12 @@ nav ul {
 }
 ul li a {
     padding: 40px 10px;
-    color: whitesmoke;
-    display: block;
     font-size: 14px;
     transition: 0.3s;
     position: relative;
     z-index: 2;
+    color: whitesmoke;
+    display: block;
 }
 ul li a:hover,
 ul li a.active {
@@ -210,13 +210,13 @@ nav .form {
 }
 .landing .text {
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     width: 50%;
     padding: 50px;
     background-color: var(--trasparent-color);
     color: whitesmoke;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: flex-end;
     border-radius: 0px 5px 5px 0px;
@@ -239,9 +239,9 @@ nav .form {
 }
 .landing .text .content h2 {
     font-size: 30px;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 20px;
-    font-weight: 400;
 }
 .landing .text .content p {
     font-size: 14px;
@@ -260,17 +260,17 @@ nav .form {
     left: 30px;
 } */
 .landing .bullets {
-    position: absolute;
-    left: 50%;
     transform: translateX(-50%);
+    position: absolute;
     bottom: 30px;
+    left: 50%;
     display: flex;
 }
 .landing .bullets li {
     width: 20px;
-    height: 20px;
     border: 1px solid whitesmoke;
     border-radius: 50%;
+    height: 20px;
     margin-right: 10px;
 }
 .landing .bullets li.active {
@@ -335,19 +335,19 @@ nav .form {
         padding-bottom: 100px;
         padding-top: 100px;
         height: 600px;
+        display: flex;
+        align-items: center;
         position: relative;
         background-image: url("../resources/design-features.jpg");
         background-size: cover;
-        display: flex;
-        align-items: center;
         overflow: hidden;
 }
 .design::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
     width: 100%;
+    top: 0;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -372,9 +372,9 @@ nav .form {
 }
 .design .text {
     color: whitesmoke;
+    border-radius: 5px 0 0 5px;
     padding: 50px;
     background-color: var(--trasparent-color);
-    border-radius: 5px 0 0 5px;
 }
 .design .text h2 {
     font-weight: normal;
@@ -386,9 +386,9 @@ nav .form {
 
 }
 .design .text ul li::before {
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
     content: "\f108";
-    font-weight: 900;
     margin-right: 20px;
 }
 
@@ -440,12 +440,12 @@ nav .form {
 }
 .portfolio .imgs .box .caption {
     position: absolute;
+    transition: 0.3s;
+    bottom: -100%;
     left: 0;
     padding: 20px;
     background-color: whitesmoke;
     width: 100%;
-    transition: 0.3s;
-    bottom: -100%;
 }
 .portfolio .imgs .box .caption h4 {
     font-weight: normal;
@@ -454,12 +454,12 @@ nav .form {
     color: var(--main-color);
 }
 .portfolio .more {
+    width: fit-content;
+    margin: 30px auto;
     background-color: var(--main-color);
     color: whitesmoke;
     padding: 15px 20px;
     display: block;
-    width: fit-content;
-    margin: 30px auto;
     text-transform: uppercase;
 }
 /* portfolio */
@@ -470,37 +470,119 @@ nav .form {
 }
 .video::before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .video video {
     width: 100%;
 }
 .video .text {
     width: 100%;
+    background-color: var(--trasparent-color);
     position: absolute;
     top: 50%;
+    text-align: center;
     transform: translateY(-50%);
     padding: 50px;
-    background-color: var(--trasparent-color);
-    text-align: center;
     color: whitesmoke;
 }
 .video .text h2 {
-    font-weight: normal;
     margin: 0 0 30px;
+    font-weight: normal;
 }
 .video .text p {
     margin: 0 0 30px;
 }
 .video .text button {
-    background-color: black;
-    color: whitesmoke;
     padding: 10px 20px;
     text-transform: uppercase;
+    background-color: black;
+    color: whitesmoke;
 }
 /* video */
+
+/* about */
+.about {
+    text-align: center;
+    padding-top: 100px;
+    overflow: hidden;
+}
+.about img {
+    position: relative;
+    max-width: 100%;
+    bottom: -120px;
+    margin-top: -120px;
+}
+@media (max-width: 767px) {
+    .about img {
+        margin-top: -60px;
+        bottom: -60px;
+    }
+}
+/* about */
+
+/* stats */
+.stats {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-image: url(../resources/stats.png);
+    background-size: cover;
+    position: relative;
+}
+.stats::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.stats .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.stats .container .box {
+    color: whitesmoke;
+    padding: 50px;
+    background-color: var(--trasparent-color);
+}
+@media (max-width: 767px) {
+    .stats .container .box {
+        flex-basis: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .stats .container .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .stats .container .box {
+        flex-basis: 25%;
+    }
+}
+.stats .container .box i {
+    margin: 0 0 50px;
+}
+.stats .container .box .number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+.stats .container .box p {
+    font-size: 14px;
+}
+.stats .container .box:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.stats .container .box:last-child {
+    border-radius: 0 5px 5px 0;
+}
+/* stats */
