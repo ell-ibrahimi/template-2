@@ -396,7 +396,7 @@ nav .form {
 /* portfolio */
 .portfolio {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 .portfolio .shuffle {
     display: flex;
@@ -463,3 +463,44 @@ nav .form {
     text-transform: uppercase;
 }
 /* portfolio */
+
+/* video */
+.video {
+    position: relative;
+}
+.video::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.video video {
+    width: 100%;
+}
+.video .text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    background-color: var(--trasparent-color);
+    text-align: center;
+    color: whitesmoke;
+}
+.video .text h2 {
+    font-weight: normal;
+    margin: 0 0 30px;
+}
+.video .text p {
+    margin: 0 0 30px;
+}
+.video .text button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+/* video */
