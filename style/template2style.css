@@ -87,7 +87,11 @@ ul {
     width: 14px;
     border-radius: 50%;
     border: 2px solid #333;
-    background-color: whitesmoke;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+.main-heading h2:hover::after{
+    background-color: var(--third-color);
 }
 .main-heading h2::before {
     content: "";
@@ -98,7 +102,11 @@ ul {
     background-color: #333;
     bottom: -30px;
     width: 120px;
+    transition: width 0.3s;
 } 
+.main-heading h2:hover::before {
+    width: 250px;
+}
 /* end componenets */
 
 /* start header */
