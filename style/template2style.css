@@ -753,3 +753,33 @@ margin-bottom: 40px;
     right: -8px;
 }
 /* skills */
+
+/* quote */
+.quote {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../resources/quote.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.quote .container {
+    position: relative;
+}
+.quote q {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;    
+}
+/* quote */
