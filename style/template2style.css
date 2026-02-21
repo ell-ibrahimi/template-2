@@ -939,7 +939,7 @@ margin-bottom: 40px;
     transform: translateY(-50%);
     left: 25px;
 }
-form input[type="email"] {
+.subscribe form input[type="email"] {
     border: 1px solid white;
     border-right: none;
     background: none;
@@ -948,7 +948,7 @@ form input[type="email"] {
     width: calc(100% - 130px);
     color: white;
 }
-form input[type="submit"] {
+.subscribe form input[type="submit"] {
     width: 130px;
     background-color: var(--main-color);
     color: white;
@@ -959,7 +959,7 @@ form input[type="submit"] {
     cursor: pointer;
     transition: 0.3s;
 }
-form input[type="submit"]:hover {
+.subscribe form input[type="submit"]:hover {
     background-color: rgb(0, 148, 216);
 }
 .subscribe form::placeholder {
@@ -976,3 +976,97 @@ form input[type="submit"]:hover {
     }
 }
 /* subscribe */
+
+/* contact */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+.contact .content form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+    caret-color: var(--main-color);
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+.contact .content form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact .content form input[type="submit"]:hover {
+    background-color: rgb(0, 148, 216);
+}
+.contact .content .info {
+    flex-basis: 27%;
+}
+@media (max-width: 767px) {
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contact .content .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+@media (max-width: 767px) {
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 40px;
+    }
+}
+.contact .content .info address {
+    color: #777;
+    line-height: 2;
+}
+/* contact */
+
+/* footer */
+.footer {
+    padding: 30px 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span {
+    color: var(--main-color);
+    font-weight: bold;
+} 
+.footer .container div {
+    margin: 10px 0;
+}
+/* footer */
