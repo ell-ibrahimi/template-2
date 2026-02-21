@@ -306,6 +306,7 @@ nav .form {
 }
 .box i {
     transform: translateY(10px);
+    color: #363636;
 }
 }
 .services .box {
